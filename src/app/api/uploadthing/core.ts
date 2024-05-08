@@ -32,7 +32,7 @@ export const ourFileRouter = {
         const updatedConfiguration = await db.configuration.update({
           where: { id: configId },
           data: {
-            imageUrl: file.url,
+            croppedImageUrl: file.url,
           },
         });
 
